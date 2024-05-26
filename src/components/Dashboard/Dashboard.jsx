@@ -24,22 +24,22 @@ const Dashboard = () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content flex flex-col justify-between">
+        <ul className="menu p-4 w-80 min-h-full bg-base-400 text-base-content flex flex-col justify-between">
           {/* Sidebar content here */}
-          <div className="">
-            <li>
-              <NavLink to={"/dashboard"}>Home</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/dashboard/add-product"}>Add Product</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/dashboard/all-product"}>All Product</NavLink>
-            </li>
+          <div className="flex flex-col gap-5">
+            <NavLink to={"/dashboard"} className={"btn"}>
+              Home
+            </NavLink>
+            <NavLink to={"/dashboard/add-product"} className={"btn"}>
+              Add Product
+            </NavLink>
+            <NavLink to={"/dashboard/all-product"} className={"btn"}>
+              All Product
+            </NavLink>
           </div>
           <div className="">
             <li>
-              <NavLink onClick={logout} to={"/"}>
+              <NavLink onClick={logout} to={"/"} className={"btn"}>
                 Logout
               </NavLink>
             </li>

@@ -11,6 +11,7 @@ import PrivetRoute from "./PrivetRoute";
 import ProductDetails from "../components/HomePages/ProductDetails";
 import AllProduct from "../components/Dashboard/AllProduct";
 import DashHome from "../components/Dashboard/DashHome";
+import AddProduct from "../components/Dashboard/AddProduct";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
         path: "/dashboard/all-product",
         element: <AllProduct></AllProduct>,
         loader: () => fetch("http://localhost:3000/products"),
+      },
+      {
+        path: "/dashboard/add-product",
+        element: <AddProduct></AddProduct>,
       },
     ],
   },
