@@ -8,6 +8,7 @@ import SignIn from "../components/Auth/SignIn";
 import SignUp from "../components/Auth/SignUp";
 import Dashboard from "../components/Dashboard/Dashboard";
 import PrivetRoute from "./PrivetRoute";
+import ProductDetails from "../components/HomePages/ProductDetails";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,12 @@ const router = createBrowserRouter([
         path: "/",
         loader: () => fetch("http://localhost:3000/products"),
         element: <Home></Home>,
+      },
+      {
+        path: "/products/:id",
+        element: <ProductDetails></ProductDetails>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/products/${params.id}`),
       },
       {
         path: "/about",

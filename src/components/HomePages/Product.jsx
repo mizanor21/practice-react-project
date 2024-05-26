@@ -2,26 +2,22 @@ import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 const Product = ({ product }) => {
-  const { product_id, name, image_url, description, price } = product;
+  const { id, name, image_url, description, price, stock_quantity } = product;
   console.log(product);
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <Link to={`/products/${id}`} className="card w-96 bg-base-100 shadow-xl">
       <figure>
         <img className="w-full h-[400px]" src={image_url} alt="Shoes" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">
           {name}
-          <div className="badge badge-secondary">{price} $</div>
+          <div className="badge badge-secondary">{stock_quantity}</div>
         </h2>
         <p>{description}</p>
-        <div className="card-actions justify-end">
-          <Link to={product_id} className="btn btn-info">
-            Details
-          </Link>
-        </div>
+        <h4 className="text-2xl font-serif text-green-800">{price} $</h4>
       </div>
-    </div>
+    </Link>
   );
 };
 

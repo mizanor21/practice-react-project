@@ -1,68 +1,31 @@
 {
   "products": [
     {
-      "product_id": "P001",
+      "id": "P001",
       "name": "Wireless Mouse",
       "description": "A smooth and responsive wireless mouse with ergonomic design.",
       "image_url": "https://m.media-amazon.com/images/I/61QY3V6A-NL._AC_SL1500_.jpg",
       "category": "Electronics",
       "price": 25.99,
-      "stock_quantity": 150,
-      "manufacturer": "TechBrand",
-      "release_date": "2023-02-15",
-      "ratings": {
-        "average_rating": 4.5,
-        "number_of_reviews": 125
-      },
-      "specifications": {
-        "connectivity": "Bluetooth",
-        "battery_life": "12 months",
-        "weight": "85g",
-        "dimensions": "4.5 x 2.5 x 1.5 inches"
-      }
+      "stock_quantity": 150
     },
     {
-      "product_id": "P002",
+      "id": "P002",
       "name": "Smartphone Stand",
       "description": "A sturdy and adjustable stand for smartphones and tablets.",
       "image_url": "https://www.shopz.com.bd/wp-content/uploads/2022/05/UGREEN-Adjustable-Aluminum-Phone-Holder-1.jpg",
       "category": "Accessories",
       "price": 19.99,
-      "stock_quantity": 300,
-      "manufacturer": "AccessoryMaker",
-      "release_date": "2022-11-10",
-      "ratings": {
-        "average_rating": 4.2,
-        "number_of_reviews": 98
-      },
-      "specifications": {
-        "material": "Aluminum",
-        "compatibility": "Up to 12-inch devices",
-        "weight": "150g",
-        "dimensions": "5 x 3 x 2 inches"
-      }
+      "stock_quantity": 300
     },
     {
-      "product_id": "P003",
+      "id": "P003",
       "name": "Bluetooth Headphones",
       "description": "Noise-cancelling over-ear headphones with superior sound quality.",
       "image_url": "https://static-01.daraz.com.bd/p/a219208ccdfb5957c79d1e33edae6f09.jpg_750x750.jpg_.webp",
       "category": "Audio",
       "price": 89.99,
-      "stock_quantity": 75,
-      "manufacturer": "SoundPro",
-      "release_date": "2023-01-20",
-      "ratings": {
-        "average_rating": 4.7,
-        "number_of_reviews": 200
-      },
-      "specifications": {
-        "connectivity": "Bluetooth 5.0",
-        "battery_life": "30 hours",
-        "weight": "250g",
-        "dimensions": "6 x 3 x 7 inches",
-        "noise_cancellation": "Active"
-      }
+      "stock_quantity": 75
     }
   ]
 }
