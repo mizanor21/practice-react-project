@@ -28,10 +28,13 @@ const Dashboard = () => {
           {/* Sidebar content here */}
           <div className="">
             <li>
-              <a>Sidebar Item 1</a>
+              <NavLink to={"/"}>Home</NavLink>
             </li>
             <li>
-              <a>Sidebar Item 2</a>
+              <NavLink to={"/add-product"}>Add Product</NavLink>
+            </li>
+            <li>
+              <NavLink to={"/all-product"}>All Product</NavLink>
             </li>
           </div>
           <div className="">
