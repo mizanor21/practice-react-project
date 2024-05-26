@@ -12,6 +12,7 @@ const ProductDetails = () => {
         <h2>
           {name} ({stock_quantity})
         </h2>
+        <i>{description}</i>
         <h4 className="text-2xl font-serif">{price} $</h4>
       </div>
     </div>
