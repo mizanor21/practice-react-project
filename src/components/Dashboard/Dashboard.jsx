@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     <div className="drawer lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col items-center justify-center">
+      <div className="drawer-content bg-slate-200">
         <Outlet></Outlet>
         <label
           htmlFor="my-drawer-2"
@@ -38,11 +38,9 @@ const Dashboard = () => {
             </NavLink>
           </div>
           <div className="">
-            <li>
-              <NavLink onClick={logout} to={"/"} className={"btn"}>
-                Logout
-              </NavLink>
-            </li>
+            <NavLink onClick={logout} to={"/"} className={"btn w-full"}>
+              Logout
+            </NavLink>
           </div>
         </ul>
       </div>

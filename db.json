@@ -26,6 +26,42 @@
       "category": "Audio",
       "price": 89.99,
       "stock_quantity": 75
+    },
+    {
+      "id": "33333",
+      "name": "Md. Mizanor Rahman",
+      "description": "this is blog",
+      "image_url": "jbasssssssssss",
+      "category": "zucchini",
+      "price": "5000",
+      "stock_quantity": "80"
+    },
+    {
+      "id": "62d03502-8043-45a6-b59c-bf52d776f987",
+      "name": "Md. Mizanor Rahman",
+      "description": "very nice blog",
+      "image_url": "345678978",
+      "category": "cherry",
+      "price": "3333",
+      "stock_quantity": "500"
+    },
+    {
+      "id": "4f88c402-c4d4-4aba-a934-94f1f4401a24",
+      "name": "Mizan21",
+      "description": "no description",
+      "image_url": "jjjjjjjjjjssssssss",
+      "category": "lemon",
+      "price": "100",
+      "stock_quantity": "105"
+    },
+    {
+      "id": "9a738977-a2f5-4f54-8777-83117c6d75e7",
+      "name": "Electric ",
+      "description": "Simply put, electricity is the flow of electric charge, and this flow is called a current. It is considered a secondary energy source, meaning that producing it requires another power supplier. Some of these suppliers are coal, oil, and natural gas, which are classified as primary energy sources.",
+      "image_url": "https://www.electricrate.com/wp-content/uploads/2021/07/How-Electricity-Works.jpg.png",
+      "category": "elderberry",
+      "price": "5000",
+      "stock_quantity": "50"
     }
   ]
 }
