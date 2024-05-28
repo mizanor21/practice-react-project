@@ -13,6 +13,7 @@ import AllProduct from "../components/Dashboard/AllProduct";
 import DashHome from "../components/Dashboard/DashHome";
 import AddProduct from "../components/Dashboard/AddProduct";
 import EditProduct from "../components/Dashboard/EditProduct";
+import Profile from "../components/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp></SignUp>,
+      },
+      {
+        path: "/profile",
+        element: <Profile></Profile>,
       },
     ],
   },
