@@ -26,9 +26,19 @@ const EditProduct = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center mt-10">
-      <h2 className="mb-5 text-3xl font-serif">Edit Product</h2>
-      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5">
+    <div className="lg:flex justify-center items-center m-5 gap-5">
+      <div className="">
+        <h2 className="mb-5 text-3xl font-serif">Edit Product</h2>
+        <img className="max-w-xl" src={image_url} alt="product image mb-10" />
+        <h2 className="card-title mt-2 text-3xl font-serif">
+          {name}
+          <div className="badge badge-secondary">{stock_quantity}</div>
+        </h2>
+      </div>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="flex flex-col gap-5 mt-5"
+      >
         <div>
           <input
             {...register("name", { required: "Name is required" })}

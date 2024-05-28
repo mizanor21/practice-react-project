@@ -1,8 +1,11 @@
 import { signOut } from "firebase/auth";
 import { NavLink, Outlet } from "react-router-dom";
 import auth from "../../../firebase.config";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 const Dashboard = () => {
+  const [user] = useAuthState(auth);
+  const { displayName, photoURL } = user || {};
   const logout = () => {
     signOut(auth);
   };
@@ -29,10 +32,24 @@ const Dashboard = () => {
           className="drawer-overlay"
         ></label>
         <ul className="menu p-4 w-80 min-h-full bg-base-400 text-base-content flex flex-col justify-between">
-          {/* Sidebar content here */}
           <div className="flex menu flex-col gap-5">
-            <NavLink to="/" className={linkClasses}>
+            <div className="flex flex-col items-center bg-white shadow-xl rounded-2xl py-5 mb-5">
+              {photoURL && (
+                <img
+                  className="w-24 h-24 rounded-full mb-4"
+                  src={photoURL}
+                  alt={`${displayName}'s avatar`}
+                />
+              )}
+              {displayName && (
+                <h1 className="text-xl font-bold">{displayName}</h1>
+              )}
+            </div>
+            <NavLink to="/" className={linkClasses} end>
               Home
+            </NavLink>
+            <NavLink to="/dashboard" className={linkClasses} end>
+              Dash Home
             </NavLink>
             <NavLink to="/dashboard/add-product" className={linkClasses}>
               Add Product
