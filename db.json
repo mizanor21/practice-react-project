@@ -1,22 +1,22 @@
 {
   "products": [
     {
-      "id": "P002",
-      "name": "Smartphone Stand",
+      "name": "Smartphone Stand pro Max 2",
       "description": "A sturdy and adjustable stand for smartphones and tablets.",
       "image_url": "https://www.shopz.com.bd/wp-content/uploads/2022/05/UGREEN-Adjustable-Aluminum-Phone-Holder-1.jpg",
-      "category": "Accessories",
-      "price": 19.99,
-      "stock_quantity": 300
+      "category": "date",
+      "price": "5",
+      "stock_quantity": "30",
+      "id": "P002"
     },
     {
-      "id": "P003",
       "name": "Bluetooth Headphones",
       "description": "Noise-cancelling over-ear headphones with superior sound quality.",
       "image_url": "https://static-01.daraz.com.bd/p/a219208ccdfb5957c79d1e33edae6f09.jpg_750x750.jpg_.webp",
-      "category": "Audio",
-      "price": 89.99,
-      "stock_quantity": 75
+      "category": "apple",
+      "price": "950",
+      "stock_quantity": "75",
+      "id": "P003"
     }
   ]
 }

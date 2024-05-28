@@ -12,6 +12,7 @@ import ProductDetails from "../components/HomePages/ProductDetails";
 import AllProduct from "../components/Dashboard/AllProduct";
 import DashHome from "../components/Dashboard/DashHome";
 import AddProduct from "../components/Dashboard/AddProduct";
+import EditProduct from "../components/Dashboard/EditProduct";
 
 const router = createBrowserRouter([
   {
@@ -68,6 +69,12 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/add-product",
         element: <AddProduct></AddProduct>,
+      },
+      {
+        path: "/dashboard/edit-product/:id",
+        element: <EditProduct></EditProduct>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/products/${params.id}`),
       },
     ],
   },

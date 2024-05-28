@@ -21,7 +21,9 @@ const DashProduct = ({ product, onDelete }) => {
         <div className="flex justify-between items-center">
           <h4 className="text-2xl font-serif text-green-800">{price} $</h4>
           <div className="flex gap-2">
-            <button className="btn">Edit</button>
+            <Link to={`/dashboard/edit-product/${id}`} className="btn">
+              Edit
+            </Link>
             <button className="btn" onClick={() => onDelete(id)}>
               Delete
             </button>
