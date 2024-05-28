@@ -82,7 +82,7 @@ const EditProduct = () => {
             defaultValue={category}
             className="select lg:w-[600px]"
           >
-            <option disabled selected>
+            <option value="" disabled>
               Select option
             </option>
             <option value="apple">Apple</option>
@@ -113,8 +113,6 @@ const EditProduct = () => {
             <option value="blackberry">Blackberry</option>
             <option value="coconut">Coconut</option>
             <option value="dragonfruit">Dragonfruit</option>
-            <option value="elderberry">Elderberry</option>
-            <option value="fig">Fig</option>
           </select>
           {errors.category && (
             <small className="text-red-600">{errors.category.message}</small>
