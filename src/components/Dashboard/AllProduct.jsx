@@ -21,7 +21,7 @@ const AllProduct = () => {
   };
 
   return (
-    <div>
+    <div className="my-5">
       <div className="flex justify-center mb-3">
         <h2 className="text-center text-3xl font-serif border-b-4">Products</h2>
       </div>
