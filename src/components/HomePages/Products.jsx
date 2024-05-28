@@ -8,7 +8,7 @@ const Products = ({ products }) => {
         <h2 className="text-center text-3xl font-serif border-b-4">Products</h2>
       </div>
       <div className="flex flex-wrap gap-5 justify-center">
-        {products.map((product) => (
+        {products.slice(0, 3).map((product) => (
           <Product key={product.id} product={product}></Product>
         ))}
       </div>
