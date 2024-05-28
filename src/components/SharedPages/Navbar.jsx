@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
 import auth from "../../../firebase.config";
+import logo from "../../assets/logo/logo1.jpg";
 
 const Navbar = () => {
   const [user, loading] = useAuthState(auth);
@@ -48,8 +49,12 @@ const Navbar = () => {
             {navItem}
           </ul>
         </div>
-        <NavLink to={"/"} className="btn btn-ghost text-xl">
-          daisyUI
+        <NavLink to={"/"} className="mt-3">
+          <img
+            className="w-36 h-12 rounded-2xl animate-pulse "
+            src={logo}
+            alt=""
+          />
         </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">

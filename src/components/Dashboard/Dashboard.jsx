@@ -1,11 +1,9 @@
 import { signOut } from "firebase/auth";
-import { NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import auth from "../../../firebase.config";
-import { useAuthState } from "react-firebase-hooks/auth";
+import logo from "../../assets/logo/logo1.jpg";
 
 const Dashboard = () => {
-  const [user] = useAuthState(auth);
-  const { displayName, photoURL } = user || {};
   const logout = () => {
     signOut(auth);
   };
@@ -33,21 +31,14 @@ const Dashboard = () => {
         ></label>
         <ul className="menu p-4 w-80 min-h-full bg-base-400 text-base-content flex flex-col justify-between">
           <div className="flex menu flex-col gap-5">
-            <div className="flex flex-col items-center bg-white shadow-xl rounded-2xl py-5 mb-5">
-              {photoURL && (
-                <img
-                  className="w-24 h-24 rounded-full mb-4"
-                  src={photoURL}
-                  alt={`${displayName}'s avatar`}
-                />
-              )}
-              {displayName && (
-                <h1 className="text-xl font-bold">{displayName}</h1>
-              )}
-            </div>
-            <NavLink to="/" className={linkClasses} end>
-              Home
-            </NavLink>
+            <Link to={"/"} className="mt-3">
+              <img
+                className="w-full h-20 rounded-2xl mb-2 hover:animate-bounce "
+                src={logo}
+                alt=""
+              />
+            </Link>
+
             <NavLink to="/dashboard" className={linkClasses} end>
               Dash Home
             </NavLink>

@@ -17,6 +17,24 @@
       "price": "800",
       "stock_quantity": "75",
       "id": "P003"
+    },
+    {
+      "name": "ULTRA HD TV (4K)",
+      "description": "The 4 K TV turns your favorite content into an ultra-new reality that enhances color.",
+      "image_url": "https://waltonbd.com/image/catalog/new_website/landing-banner/television/4k-ultra-hd.gif",
+      "category": "apple",
+      "price": "1000",
+      "stock_quantity": "50",
+      "id": "ed06d74c-7711-4f87-b36a-aa4c56dd157d"
+    },
+    {
+      "id": "738a522f-3821-4ac1-a16d-7dd81ffba472",
+      "name": "I Phone pro",
+      "description": "very nice blog",
+      "image_url": "https://waltonbd.com/image/catalog/mobile/smart-phone/nexg-n9/feature/large-view/nexg-n9_feature-11-new.webp",
+      "category": "apple",
+      "price": "3000",
+      "stock_quantity": "100"
     }
   ]
 }

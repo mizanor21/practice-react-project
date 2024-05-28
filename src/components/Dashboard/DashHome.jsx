@@ -1,5 +1,6 @@
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.config";
+import bgVictory from "../../assets/logo/bg-victory.avif";
 
 const DashHome = () => {
   const bg =
@@ -21,14 +22,21 @@ const DashHome = () => {
       ) : error ? (
         <span>{error?.message}</span>
       ) : (
-        <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-48">
+        <div
+          className="flex flex-col items-center bg-white shadow-md rounded-lg p-48 text-white"
+          style={{
+            backgroundImage: `url(${bgVictory})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <img
             className="w-24 h-24 rounded-full mb-4"
             src={photoURL}
             alt={`${displayName}'s avatar`}
           />
           <h1 className="text-2xl font-bold mb-2">{displayName}</h1>
-          <p className="text-gray-600 mb-2">{email}</p>
+          <p className=" mb-2">{email}</p>
         </div>
       )}
     </div>
